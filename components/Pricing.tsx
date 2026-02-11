@@ -24,8 +24,8 @@ export default function Pricing() {
             <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
             PARTNERSHIP OPPORTUNITIES
           </motion.div>
-          
-          <motion.h2 
+
+          <motion.h2
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -33,9 +33,9 @@ export default function Pricing() {
           >
             Fuel the <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400">Revolution</span>
           </motion.h2>
-          
+
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Connect with the brightest minds in tech. Become a sponsor and define the future of innovation at Nexus Hack 2025.
+            Connect with the brightest minds in tech. Become a sponsor and define the future of innovation at ByteCamp 26.
           </p>
         </div>
 
@@ -43,7 +43,7 @@ export default function Pricing() {
           {SPONSORSHIP_TIERS.map((tier, index) => {
             const Icon = tier.icon;
             return (
-              <motion.div 
+              <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -53,13 +53,13 @@ export default function Pricing() {
               >
                 {/* Holographic Border */}
                 <div className={`absolute -inset-[1px] rounded-2xl bg-gradient-to-b ${tier.gradient} opacity-20 group-hover:opacity-100 transition-opacity duration-500 blur-sm`} />
-                
+
                 {/* Main Card */}
                 <div className="relative h-full bg-black/80 backdrop-blur-xl rounded-2xl p-8 border border-white/10 flex flex-col overflow-hidden">
-                  
+
                   {/* Top Highlight Bar */}
                   <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${tier.gradient}`} />
-                  
+
                   {/* Header */}
                   <div className="mb-8">
                     <div className={`w-14 h-14 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 ${tier.color} group-hover:scale-110 transition-transform duration-300`}>
@@ -76,7 +76,7 @@ export default function Pricing() {
                     {tier.features.map((feature, i) => (
                       <div key={i} className="flex items-start gap-3 group/item">
                         <div className={`mt-1 w-4 h-4 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0 group-hover/item:border-${tier.color.split('-')[1]}-500 transition-colors`}>
-                           <Check className="w-2.5 h-2.5 text-white" />
+                          <Check className="w-2.5 h-2.5 text-white" />
                         </div>
                         <span className="text-sm text-gray-400 group-hover/item:text-gray-200 transition-colors">
                           {feature}
@@ -89,8 +89,8 @@ export default function Pricing() {
                   <button className={`
                     w-full py-4 rounded-xl font-bold text-sm tracking-wider uppercase flex items-center justify-center gap-2 transition-all duration-300
                     border border-white/10 hover:border-white/30
-                    ${tier.highlight 
-                      ? `bg-gradient-to-r ${tier.gradient} text-black hover:shadow-[0_0_20px_rgba(234,179,8,0.3)]` 
+                    ${tier.highlight
+                      ? `bg-gradient-to-r ${tier.gradient} text-black hover:shadow-[0_0_20px_rgba(234,179,8,0.3)]`
                       : 'bg-white/5 text-white hover:bg-white/10'}
                   `}>
                     Become a Partner
@@ -104,15 +104,15 @@ export default function Pricing() {
             );
           })}
         </div>
-        
+
         {/* Contact Strip */}
         <div className="mt-20 text-center">
-            <p className="text-gray-500 text-sm font-mono">
-                Looking for a custom package? <a href="#contact" className="text-blue-400 hover:text-blue-300 underline underline-offset-4">Contact our sponsorship team</a>
-            </p>
+          <p className="text-gray-500 text-sm font-mono">
+            Looking for a custom package? <a href="#contact" className="text-blue-400 hover:text-blue-300 underline underline-offset-4">Contact our sponsorship team</a>
+          </p>
         </div>
       </div>
-      
+
       <style>{`
         @keyframes scan {
           0% { top: 0%; opacity: 0; }

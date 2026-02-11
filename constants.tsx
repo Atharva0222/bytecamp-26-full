@@ -2,12 +2,12 @@ import React from 'react';
 import { Brain, Globe, Cpu, HeartPulse, Trophy, Clock, MapPin, Users, Calendar, Shield, Zap, Diamond, Star, Award } from 'lucide-react';
 
 export const NAV_LINKS = [
+  { label: 'Home', href: '/' },
   { label: 'About', href: '#about' },
-  { label: 'Theme', href: '#theme' },
   { label: 'Tracks', href: '#tracks' },
   { label: 'Timeline', href: '#timeline' },
   { label: 'Prizes', href: '#prizes' },
-  { label: 'Sponsors', href: '#pricing' }, // Updated link
+  { label: 'Team', href: '/team' },
   { label: 'Location', href: '#location' },
 ];
 
@@ -16,41 +16,53 @@ export const TRACKS_CARDS = [
     title: 'Gen AI',
     description: 'Push the boundaries of creativity and logic using LLMs, diffusion models, and next-gen AI tools.',
     icon: <Brain className="w-8 h-8" />,
-    color: 'teal',
-    colorClass: 'text-teal-400',
-    cardImage: '/assets/uno-cards/Gen-ai.png',
-    cardBackImage: '/assets/uno-cards/Gen-ai-back.png',
-    borderColor: 'border-teal-500'
+    accentColor: '#00e5a0',
+    perks: [
+      'LLMs, diffusion models, agents',
+      'API credits & cloud resources',
+      'Mentor-guided sessions'
+    ],
+    prize: 'Tech Gadgets',
+    prizeLabel: 'FOR EACH TEAM MEMBER'
   },
   {
     title: 'FinTech',
     description: 'Reimagine the future of finance, blockchain payments, and decentralized economies.',
     icon: <Globe className="w-8 h-8" />,
-    color: 'green',
-    colorClass: 'text-green-400',
-    cardImage: '/assets/uno-cards/Fintech.png',
-    cardBackImage: '/assets/uno-cards/Fintech-back.png',
-    borderColor: 'border-green-500'
+    accentColor: '#3b82f6',
+    perks: [
+      'Blockchain & DeFi integrations',
+      'Payment gateway sandboxes',
+      'FinTech mentor access'
+    ],
+    prize: '₹15,000',
+    prizeLabel: 'TRACK PRIZE'
   },
   {
     title: 'Sustainability',
     description: 'Build eco-friendly solutions that tackle climate change, renewable energy, and sustainable living.',
     icon: <Cpu className="w-8 h-8" />,
-    color: 'yellow',
-    colorClass: 'text-yellow-400',
-    cardImage: '/assets/uno-cards/Sustainability.png',
-    cardBackImage: '/assets/uno-cards/Sustainability-back.png',
-    borderColor: 'border-yellow-500'
+    accentColor: '#eab308',
+    perks: [
+      'IoT & sensor kits available',
+      'Green-tech API access',
+      'Sustainability expert mentors'
+    ],
+    prize: 'Cloud Credits',
+    prizeLabel: 'FOR THE WINNING TEAM'
   },
   {
     title: 'HealthTech',
     description: 'Develop solutions that improve patient care, mental health, and healthcare accessibility.',
     icon: <HeartPulse className="w-8 h-8" />,
-    color: 'red',
-    colorClass: 'text-red-400',
-    cardImage: '/assets/uno-cards/Healthtech.png',
-    cardBackImage: '/assets/uno-cards/Healthtech-back.png',
-    borderColor: 'border-red-500'
+    accentColor: '#f97316',
+    perks: [
+      'Health data APIs & SDKs',
+      'Wearable device access',
+      'Healthcare mentor sessions'
+    ],
+    prize: '₹10,000',
+    prizeLabel: 'MAIN PRIZE'
   }
 ];
 

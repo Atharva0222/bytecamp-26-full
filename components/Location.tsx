@@ -45,7 +45,7 @@ export default function Location() {
               <Mail className="w-6 h-6 text-blue-500 shrink-0 mt-1" />
               <div>
                 <h3 className="text-white font-bold mb-1">Email</h3>
-                <p className="text-gray-400">hello@bytecamp.in</p>
+                <p className="text-gray-400">bytecamp@siesgst.ac.in</p>
               </div>
             </div>
 
