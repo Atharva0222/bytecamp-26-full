@@ -218,7 +218,7 @@ export default function Hero() {
             />
           </div>
 
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-8 leading-relaxed">
+          <p className="text-base md:text-xl text-gray-400 max-w-2xl mx-auto mb-8 leading-relaxed">
             Join 500+ developers, designers, and creators for 24 hours of coding, innovation, and chaos in the heart of Mumbai.
           </p>
 

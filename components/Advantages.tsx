@@ -68,11 +68,11 @@ export default function Advantages() {
                         viewport={{ once: true }}
                         className="text-4xl md:text-5xl font-bold mb-4"
                     >
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400">
+                        <span className="text-white">
                             Explore the Benefits of
                         </span>
                         <br />
-                        <span className="text-white">BYTECAMP'26</span>
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400">BYTECAMP'26</span>
                     </motion.h2>
                 </div>
 

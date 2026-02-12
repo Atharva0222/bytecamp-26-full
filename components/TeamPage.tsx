@@ -33,6 +33,9 @@ const coreTeam: TeamMember[] = [
     { name: 'Sakshi Sukre', role: 'Management' },
     { name: 'Soham Kulkarni', role: 'Management' },
     { name: 'Subhronil Chattoraj', role: 'Management' },
+];
+
+const organizers: TeamMember[] = [
     { name: 'Soham Sawant', role: 'Organizer' },
     { name: 'Samiksha Dhole', role: 'Organizer' },
 ];
@@ -187,6 +190,24 @@ export default function TeamPage() {
                     </motion.div>
                     <div className="team-grid core">
                         {coreTeam.map((member, i) => (
+                            <MemberCard key={member.name} member={member} index={i} />
+                        ))}
+                    </div>
+                </div>
+
+                {/* Organizers */}
+                <div className="mb-20">
+                    <motion.div
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        className="flex items-center gap-3 mb-8"
+                    >
+                        <div className="w-1 h-8 bg-gradient-to-b from-green-500 to-emerald-500 rounded-full" />
+                        <h2 className="text-2xl font-bold text-white">Organizers</h2>
+                    </motion.div>
+                    <div className="team-grid core">
+                        {organizers.map((member, i) => (
                             <MemberCard key={member.name} member={member} index={i} />
                         ))}
                     </div>

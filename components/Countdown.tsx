@@ -5,7 +5,7 @@ const TARGET_DATE = new Date('2026-03-14T09:00:00').getTime();
 
 const TimeBlock = ({ value, label }: { value: number; label: string }) => (
   <div className="flex flex-col items-center">
-    <span className="text-6xl md:text-9xl font-extrabold font-mono tabular-nums bg-gradient-to-b from-white to-gray-500 bg-clip-text text-transparent leading-none">
+    <span className="text-5xl md:text-9xl font-extrabold font-mono tabular-nums bg-gradient-to-b from-white to-gray-500 bg-clip-text text-transparent leading-none">
       {String(Math.max(0, value)).padStart(2, '0')}
     </span>
     <span className="text-xs md:text-sm font-bold text-gray-500 uppercase tracking-[0.2em] mt-3">{label}</span>

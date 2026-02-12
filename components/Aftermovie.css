@@ -40,3 +40,17 @@
     border: none;
     border-radius: 20px;
 }
+
+@media (max-width: 768px) {
+    .aftermovie-section {
+        padding: 60px 0;
+    }
+
+    .aftermovie-wrapper {
+        border-radius: 14px;
+    }
+
+    .aftermovie-iframe-container iframe {
+        border-radius: 14px;
+    }
+}

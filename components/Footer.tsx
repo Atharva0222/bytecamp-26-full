@@ -12,7 +12,7 @@ export default function Footer() {
           <span className="text-lg font-bold tracking-wider">Bytecamp '26</span>
         </div>
 
-        <nav className="flex gap-8">
+        <nav className="flex flex-wrap justify-center gap-x-6 gap-y-3 md:gap-8">
           {NAV_LINKS.map(link => (
             <a key={link.label} href={link.href} className="text-sm text-gray-400 hover:text-white transition-colors">
               {link.label}
