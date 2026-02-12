@@ -77,7 +77,7 @@ export default function Prizes() {
         >
           <div className="w-72 h-72 md:w-80 md:h-80">
             <iframe
-              src="https://lottie.host/embed/8b23c1b5-f597-4147-8087-7eab05110b41/hvX3i9TDiE.lottie"
+              src="https://lottie.host/embed/760a7baa-1a16-4994-91cb-063c1720a907/ABgV02ZJ32.lottie"
               className="w-full h-full border-0"
               style={{ background: 'transparent' }}
             />

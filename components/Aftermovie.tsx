@@ -37,7 +37,7 @@ export default function Aftermovie() {
                     <div className="aftermovie-iframe-container">
                         {/* Replace VIDEO_ID with your actual YouTube video ID */}
                         <iframe
-                            src="https://www.youtube.com/embed/VIDEO_ID"
+                            src="https://www.youtube.com/embed/1JXIEP1nF7w?si=1lm15Fm_MgQuMGas"
                             title="BYTECAMP'25 Aftermovie"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen
